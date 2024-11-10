@@ -11,6 +11,7 @@
     --center-text-align: center;
     --padding: 10px 20px;
     --flex-align-items: center;
+    --font-weight: bold;
 
 
 }
@@ -47,4 +48,5 @@ body {
     text-decoration: none;
     color: var(--text-color);
     text-transform: var(--text-transform);
+    font-weight: var(--font-weight);
 }
