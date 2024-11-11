@@ -7,11 +7,16 @@
     --text-transform: capitalize;
     --link-font-size: 18px;
     --font-family: Helvetica, sans-serif;
-    --margin: 8px;
+    --margin: 12px;
     --center-text-align: center;
-    --padding: 10px 20px;
+    --padding: 12px 20px;
     --flex-align-items: center;
     --font-weight: bold;
+    --line-height: 1.4;
+    --subheading-color: #8b0000;
+    --flex-margin: 30px 0;
+    --border-radius: 8px;
+    --border: none;
 
 
 }
@@ -20,6 +25,26 @@ body {
     margin: 20px;
     padding: 20px;
     color: var(--text-color);
+    line-height: var(--line-height);
+
+}
+
+button {
+    background-color: #000;
+    padding: var(--padding);
+    margin: var(--margin);
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+button a {
+    color: #fff;
+    font-size: var(--link-font-size);
+
+}
+
+button:hover {
+    background-color: var(--subheading-color);
 }
 
 #nav-header {
@@ -40,7 +65,6 @@ body {
     font-size: var(--link-font-size);
     background-color: var(--link-background-color);
     padding: 10px 20px;
-    list-style-type: none;
     margin: var(--margin);
 }
 
@@ -48,5 +72,53 @@ body {
     text-decoration: none;
     color: var(--text-color);
     text-transform: var(--text-transform);
+    font-weight: var(--font-weight);
+}
+
+.subheading {
+    text-transform: var(--text-transform);
+    text-align: var(--flex-align-items);
+    margin: 30px ;
+    color: var(--subheading-color);
+    font-weight: var(--font-weight);
+}
+
+.card {
+    background-color: var(--link-background-color);
+    padding: var(--padding);
+    margin: 40px;
+}
+
+.inner-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: var(--flex-align-items);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: var(--padding);
+}
+
+.card-info-details {
+    margin: var(--flex-margin);
+}
+
+.card-info-details p, li {
+    padding: 5px;
+}
+
+
+img {
+    max-width: 400px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.expertise {
     font-weight: var(--font-weight);
 }
