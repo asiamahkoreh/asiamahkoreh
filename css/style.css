@@ -17,6 +17,9 @@
     --flex-margin: 30px 0;
     --border-radius: 8px;
     --border: none;
+    --button-background-color: #8b0000;
+    --button-text-color: #fff;
+    --button-hover-color: #000;
 
 
 }
@@ -30,7 +33,7 @@ body {
 }
 
 button {
-    background-color: #000;
+    background-color: var(--button-background-color);
     padding: var(--padding);
     margin: var(--margin);
     border-radius: var(--border-radius);
@@ -38,13 +41,14 @@ button {
 }
 
 button a {
-    color: #fff;
+    color: var(--button-text-color);
     font-size: var(--link-font-size);
 
 }
 
 button:hover {
-    background-color: var(--subheading-color);
+    background-color: var(--button-hover-color);
+    color: var(--button-background-color);
 }
 
 #nav-header {
@@ -107,7 +111,7 @@ button:hover {
 }
 
 .card-info-details p, li {
-    padding: 5px;
+    padding: 3px;
 }
 
 
