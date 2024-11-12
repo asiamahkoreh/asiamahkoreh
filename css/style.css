@@ -21,6 +21,7 @@
     --button-background-color: #8b0000;
     --button-text-color: #fff;
     --button-hover-color: #000;
+    --font-size: 1.2rem;
 
 
 }
@@ -30,7 +31,15 @@ body {
     padding: 1.2rem;
     color: var(--text-color);
     line-height: var(--line-height);
+    font-size: var(--font-size);
 
+}
+
+h1, .intro-text {
+    text-transform: var(--text-transform);
+    font-size: 2rem;
+    text-align: var(--flex-align-items);
+    margin: 1.5rem;
 }
 
 button {
