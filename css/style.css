@@ -26,8 +26,8 @@
 }
 
 body {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.2rem;
+    padding: 1.2rem;
     color: var(--text-color);
     line-height: var(--line-height);
 
@@ -148,6 +148,10 @@ li{
     margin-bottom: 25px;
 }
 
+img {
+    border-radius: var(--border-radius);
+}
+
 h3 {
     color: var(--subheading-color);
     text-align: left;
@@ -161,6 +165,7 @@ h3 {
     flex-wrap: wrap;
     padding: var(--padding);
     margin: 10px;
+
 }
 
 .service-inner-card {
